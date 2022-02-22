@@ -8,13 +8,13 @@ import Invoices from "./routes/invoices";
 import reportWebVitals from './reportWebVitals';
 let routes = (
   <Switch>
-    <Route exact path="/build/">
+    <Route exact path="/">
       <App />
     </Route>
-    <Route exact path="/build/about" title="About">
+    <Route exact path="/about" title="About">
       <Expenses />
     </Route>
-    <Route exact path="/build/user" title="User">
+    <Route exact path="/user" title="User">
       <Invoices />
       </Route>
   </Switch>
