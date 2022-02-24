@@ -1,27 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Home from './Components/landing';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { Route, Switch } from "react-router";
-import Expenses from "./routes/expenses";
-import Invoices from "./routes/invoices";
 import reportWebVitals from './reportWebVitals';
 let routes = (
   <Switch>
     <Route exact path="/">
-      <App />
+  <Home />
     </Route>
-    <Route exact path="/about" title="About">
-      <Expenses />
-    </Route>
-    <Route exact path="/user" title="User">
-      <Invoices />
-      </Route>
   </Switch>
 );
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+    <App />
         {routes}
       </Router>
   </React.StrictMode>,
